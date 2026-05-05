@@ -92,8 +92,7 @@ defaults. `skinflame` aims to be the obvious Python entry point.
 If you use `skinflame` in academic work, please cite:
 
 > Vishnupriya, K. (2026). *skinflame: Multi-omic causal mediation analysis for
-> atopic dermatitis and inflammation research.* Journal of Open Source
-> Software [submission pending].
+> atopic dermatitis and inflammation research.* [submission pending].
 
 ## License
 
