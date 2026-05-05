@@ -200,9 +200,10 @@ def load_gse121212(
             "Install with: pip install skinflame[geo]"
         ) from e
 
-    import GEOparse
     import os
     from pathlib import Path
+
+    import GEOParse
 
     cache = Path(cache_dir or os.path.expanduser("~/.skinflame_cache"))
     cache.mkdir(parents=True, exist_ok=True)
