@@ -203,7 +203,7 @@ def load_gse121212(
     import os
     from pathlib import Path
 
-    import GEOParse
+    import GEOparse
 
     cache = Path(cache_dir or os.path.expanduser("~/.skinflame_cache"))
     cache.mkdir(parents=True, exist_ok=True)
