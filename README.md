@@ -3,6 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/skinflame.svg)](https://pypi.org/project/skinflame/)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20034163.svg)](https://doi.org/10.5281/zenodo.20034163)
 
 **Multi-omic causal mediation analysis for atopic dermatitis (AD) and inflammation research.**
 
