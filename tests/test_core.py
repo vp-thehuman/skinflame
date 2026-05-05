@@ -19,11 +19,6 @@ def test_simulate_ad_cohort_shapes():
 def test_classic_mediation_recovers_direction():
     b = simulate_ad_cohort(n=600, p_transcript=20, p_metab=10, p_microbiome=5, seed=1)
     # Use only the *active* mediators (the first few) so classic OLS is well-conditioned.
-    actives = (
-        b.transcript_cols[:6]
-        + b.metab_cols[:3]
-        + b.microbiome_cols[:2]
-    )
     res = mediation_analysis(
         exposure="filaggrin_LoF",
         outcome="SCORAD",
