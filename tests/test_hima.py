@@ -1,5 +1,4 @@
 import numpy as np
-import pytest
 
 from skinflame import mediation_analysis
 from skinflame.data import simulate_ad_cohort
