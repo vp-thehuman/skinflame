@@ -77,7 +77,6 @@ def _penalized_select(
     X_block = standardize(X_block)
     extras = data[[exposure, *confounders]].to_numpy(dtype=float)
     extras = standardize(extras) if extras.shape[1] > 0 else extras
-    X = np.hstack([extras, X_block])
     y = data[outcome].to_numpy(dtype=float)
     n_features_extras = extras.shape[1]
 
