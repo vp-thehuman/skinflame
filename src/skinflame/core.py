@@ -16,8 +16,8 @@ Single-mediator case is the special case with one alpha and one beta_M.
 from __future__ import annotations
 
 import warnings
-from dataclasses import dataclass, field
 from collections.abc import Mapping, Sequence
+from dataclasses import dataclass, field
 
 import numpy as np
 import pandas as pd
