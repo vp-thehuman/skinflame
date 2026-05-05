@@ -297,8 +297,6 @@ def bootstrap_mediation(
         k: np.array([r["per_block_nie"][k] for r in valid]) for k in blocks
     }
 
-    ci_fn = bca_ci if ci == "bca" else percentile_ci
-
     def _wrap(theta_hat: float, samples: np.ndarray) -> EffectEstimate:
         if ci == "bca":
             lo, hi = bca_ci(samples, theta_hat, alpha)
