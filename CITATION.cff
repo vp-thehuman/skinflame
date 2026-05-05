@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use skinflame in academic work, please cite it as below."
+title: "skinflame: Multi-omic causal mediation analysis for atopic dermatitis and inflammation research"
+authors:
+  - family-names: "Kannan"
+    given-names: "Vishnupriya"
+    orcid: "https://orcid.org/0009-0007-1326-4549"
+    affiliation: "Lee Kong Chian School of Medicine, Nanyang Technological University, Singapore"
+version: 0.1.0
+date-released: 2026-05-04
+license: MIT
+repository-code: "https://github.com/vp-thehuman/skinflame"
+url: "https://github.com/vp-thehuman/skinflame"
+keywords:
+  - mediation
+  - causal-inference
+  - multi-omics
+  - atopic-dermatitis
+  - inflammation
+  - HIMA
+  - bioinformatics
+  - python
+preferred-citation:
+  type: article
+  title: "skinflame: Multi-omic causal mediation analysis for atopic dermatitis and inflammation research"
+  authors:
+    - family-names: "Kannan"
+      given-names: "Vishnupriya"
+  year: 2026
+  journal: "Journal of Open Source Software"
+  doi: "10.21105/joss.XXXXX"

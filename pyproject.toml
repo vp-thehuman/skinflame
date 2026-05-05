@@ -1,0 +1,85 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skinflame"
+version = "0.1.0"
+description = "Multi-omic causal mediation analysis for atopic dermatitis and inflammation research"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Vishnupriya Kannan", email = "vishish123@gmail.com" }]
+keywords = [
+    "mediation",
+    "causal-inference",
+    "multi-omics",
+    "atopic-dermatitis",
+    "inflammation",
+    "HIMA",
+    "bioinformatics",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "statsmodels>=0.14",
+    "networkx>=3.1",
+    "joblib>=1.3",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+demo = [
+    "streamlit>=1.30",
+    "matplotlib>=3.7",
+    "seaborn>=0.13",
+    "plotly>=5.17",
+]
+geo = [
+    "GEOparse>=2.0.3",
+]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.4",
+]
+all = [
+    "skinflame[demo,geo,dev]",
+]
+
+[project.urls]
+Homepage = "https://github.com/vp-thehuman/skinflame"
+Issues = "https://github.com/vp-thehuman/skinflame/issues"
+
+[project.scripts]
+skinflame-demo = "skinflame.cli:run_demo"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+skinflame = ["data/*.csv", "data/*.tsv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
