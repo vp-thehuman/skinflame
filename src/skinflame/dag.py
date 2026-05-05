@@ -19,6 +19,7 @@ the estimand from total to direct effect.
 from __future__ import annotations
 
 from collections.abc import Iterable
+
 import networkx as nx
 
 
