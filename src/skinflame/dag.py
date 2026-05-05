@@ -22,7 +22,7 @@ from collections.abc import Iterable
 import networkx as nx
 
 
-def validate_dag(g: "nx.DiGraph", exposure: str | None = None, outcome: str | None = None) -> None:
+def validate_dag(g: nx.DiGraph, exposure: str | None = None, outcome: str | None = None) -> None:
     """Raise if `g` is not a DAG or if exposure/outcome are missing."""
     if not isinstance(g, nx.DiGraph):
         raise TypeError("`dag` must be a networkx.DiGraph")
