@@ -4,7 +4,7 @@
 
 Lee Kong Chian School of Medicine, Nanyang Technological University, Singapore
 
-**Corresponding author:** vishish123@gmail.com
+**Corresponding author:** vish0020@e.ntu.edu.sg
 
 **Running head:** skinflame: multi-omic causal mediation for AD
 
